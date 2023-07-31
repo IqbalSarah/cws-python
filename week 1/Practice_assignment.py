@@ -81,3 +81,14 @@ elif d > a and d > b and d > c and d > e:
     print(d, "has the highest score")
 else:
     print(e, "has the highest score")
+
+
+# calculate the sum of all the odd numbers within the given range.
+
+
+a = int(input("Enter a number = "))
+sum = 0
+for i in range(1, a + 1):
+    if i % 2 != 0:
+        sum += i
+print(sum)
