@@ -9,7 +9,7 @@ Enter a number =
 """
 
 num = int(input("Enter the number = "))
-ans = 1
+factorial = 1
 for i in range(1, num + 1):
-    ans = ans * i
-print(ans)
+    factorial = factorial * i
+print(factorial)
