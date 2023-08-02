@@ -1,5 +1,5 @@
 # Python Learning Repository
-![image](https://github.com/IqbalSarah/cws-python/assets/102433991/5c5b98e2-42f9-4e11-afeb-f1eb10953a8b)
+![image](https://github.com/IqbalSarah/cws-python/assets/102433991/bf6a423e-4e9f-4ac5-8597-de28252c2539)
 
 Welcome to the Python Learning Repository! This repository contains a collection of Python code files organized on a weekly basis. Each week's folder covers different topics related to Python, including Python basics, loops, functions, lists, and much more. Whether you're a beginner or an experienced Python developer looking to brush up on your skills, this repository is designed to help you learn and improve your Python programming knowledge.
 
