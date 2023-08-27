@@ -6,14 +6,14 @@
     * * * * *
   * * * * * * *
 * * * * * * * * *
-"""
-# for i in range(1, 6):
-#     for j in range(1, 6 - i):
-#         print("  ", end="")
-#     for k in range(2 * i - 1):
-#         print("* ", end="")
+# """
+for i in range(1, 6):
+    for j in range(1, 6 - i):
+        print("  ", end="")
+    for k in range(2 * i - 1):
+        print("* ", end="")
 
-#     print()
+    print()
 
 """
 2nd
@@ -29,21 +29,21 @@
         * 
 """
 
-# for i in range(1, 6):
-#     for j in range(5 - i):
-#         print("  ", end="")
-#     for k in range(2 * i - 1):
-#         print("* ", end="")
+for i in range(1, 6):
+    for j in range(5 - i):
+        print("  ", end="")
+    for k in range(2 * i - 1):
+        print("* ", end="")
 
-#     print()
+    print()
 
-# for i in range(4, 0, -1):
-#     for j in range(5 - i):
-#         print("  ", end="")
-#     for k in range(2 * i - 1):
-#         print("* ", end="")
+for i in range(4, 0, -1):
+    for j in range(5 - i):
+        print("  ", end="")
+    for k in range(2 * i - 1):
+        print("* ", end="")
 
-#     print()
+    print()
 
 
 """
@@ -73,12 +73,10 @@ Print all prime numbers between them.
 num1 = int(input("Enter start number = "))
 num2 = int(input("Enter end number = "))
 
-factor = 0
-for i in range(1, num + 1):
-    if num % i == 0:
-        factor = factor + 1
-print(factor)
-if factor == 2:
-    print("prime")
-else:
-    print("not prime")
+for i in range(num1, num2 + 1):
+    factors = 0
+    for j in range(1, i + 1):
+        if i % j == 0:
+            factors += 1
+    if factors == 2:
+        print(i, end=" ")
