@@ -7,18 +7,19 @@ K = 6
 Output = {'Anirudh': 'Male', 'Sagar': '1111', 'Pqr': 2}
 """
 
-test_dict = {"Anirudh": "Male", "xyz": 8, "Sagar": "1111", "Pqr": 2, "ABBC": 9}
-K = int(input("Enter a value K: "))
-filtered_dict = {}
+# test_dict = {"Anirudh": "Male", "xyz": 8, "Sagar": "1111", "Pqr": 2, "ABBC": 9}
+# another_dict = {}
 
-for key, value in test_dict.items():
-    if isinstance(value, (int, float)):
-        if value <= K:
-            filtered_dict[key] = value
-    else:
-        filtered_dict[key] = value
+# k = int(input("Enter k = "))
+# for key, value in test_dict.items():
+#     if type(value) == int or type(value) == float:
+#         if value < k:
+#             another_dict[key] = value
+#     else:
+#         another_dict[key] = value
 
-print("Output:", filtered_dict)
+
+# print(another_dict)
 
 
 """Q2. Write a Python program to convert more than one list to a nested dictionary."""
@@ -73,12 +74,24 @@ into a dictionary of lists. Make a list on your own."""
 
 """Q5. Make your own dictionary, sort the dictionary by values."""
 
-data = {"apple": 5, "banana": 2, "orange": 8, "grape": 1}
-sorted_data = {}
-for key in sorted(data, key=data.get):
-    sorted_data[key] = data[key]
+# data = {"apple": 5, "banana": 2, "orange": 8, "grape": 1}
+# sorted_data = {}
+# for key in sorted(data, key=data.get):
+#     sorted_data[key] = data[key]
 
-print(sorted_data)
+# print(sorted_data)
+
+# #OR
+# data = {"apple": 5, "banana": 2, "orange": 8, "grape": 1}
+
+# data1 = {}
+# values = sorted(data.values())
+# print(type(values))
+# for v in values:
+#     for k in data:
+#         if data[k] == v:
+#             data1[k] = v
+# print(data1)
 
 """Q6. Write a Python program to convert a dictionary into a list of lists."""
 
@@ -91,13 +104,6 @@ print(sorted_data)
 """Q7. Write a Python program to filter even numbers from a dictionary of values."""
 
 # data = {"V": [1, 4, 6, 10], "VI": [1, 4, 12], "VII": [1, 3, 8]}
-
-# for k, v in data.items():
-#     for i in v:
-#         if i % 2 != 0:
-#             v.remove(i)
-# print(data)
-
 
 # for k, v in data.items():
 #     even_values = []
