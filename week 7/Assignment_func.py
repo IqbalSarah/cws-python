@@ -53,12 +53,9 @@ words in the sentence."""
 # print(r)
 
 
-'''
+"""
 Q4. Write a Python function flatten_list(nested_list) that takes a nested list as input 
 and returns a flattened version of the list.
-'''
+"""
 # nested_list_1 = [1, [2, 3, [4, 5]], 6, [7, 8]]
 # Outputs: [1, 2, 3, 4, 5, 6, 7, 8]
-
-def flatten_list(a:list):
-    a=a.
