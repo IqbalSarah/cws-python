@@ -1,5 +1,4 @@
 # Python Learning Repository
-![image](https://github.com/IqbalSarah/cws-python/assets/102433991/248f7746-9778-4324-aae6-2308f4e25152)
 ![image](https://github.com/IqbalSarah/cws-python/assets/102433991/e7235e8e-feae-49d9-880b-173f44bcbe3a)
 
 
