@@ -1,4 +1,4 @@
-a = ["EVEN" if i % 2 == 0 else "ODD" for i in range(1, 31)]
+# a = ["EVEN" if i % 2 == 0 else "ODD" for i in range(1, 31)]
 
 
 # a = ["EVEN" for i in range(1, 31) if i % 2 == 0 else "ODD"] # it will give error because else con not be in end

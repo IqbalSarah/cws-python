@@ -1,16 +1,22 @@
-def vowelWords(filename):
-    sentence1 = []
-    with open(f"{filename}.txt", "r") as f:
-        lines = f.readlines()
-
-    for line in lines.strip():
-        for word in line:
-            if vowelWords(word) >= 3:
-                sentence1.append(word)
-
-    with open("sentence1.txt", "w") as output_file:
-        for word in sentence1:
-            output_file.write(word + "\n")
+def countVowels(word: str) -> int:
+    vowels = "aeiou"
+    count = 0
+    for ch in vowels:
+        count = count + word.lower().count(ch)
+    return count
 
 
-vowelWords("sentence")
+def printVowels(filename: str, newfilename: str) -> None:
+    with open(filename, "r") as f:
+        data = f.readlines()
+    with open(newfilename, "w") as f:
+        for line in data:
+            line = line.strip()
+            words = line.split()
+            for word in words:
+                if countVowels(word) >= 3:
+                    f.write(word + " ")
+            f.write("\n")
+
+
+printVowels("sentence.txt", "sentence1.txt")

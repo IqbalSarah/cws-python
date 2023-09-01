@@ -3,31 +3,31 @@ if the string is a palindrome (reads the same forwards and backwards), and False
 """
 
 
-# def is_palindrome():
-#     s = input("Enter a string: ").lower()
-#     return s == s[::-1]
+def is_palindrome():
+    s = input("Enter a string: ").lower()
+    return s == s[::-1]
 
 
-# r = is_palindrome()
-# print(r)
+r = is_palindrome()
+print(r)
 
 """Q2. Write a Python function factorial(n) 
 that calculates and returns the factorial of a non-negative integer n."""
 
 
-# def factorial():
-#     num = int(input("Enter a number : "))
-#     result = 1
-#     if num < 0:
-#         return "Factorial of negative numbers doesn't exist"
+def factorial():
+    num = int(input("Enter a number : "))
+    result = 1
+    if num < 0:
+        return "Factorial of negative numbers doesn't exist"
 
-#     for i in range(1, num + 1):
-#         result *= i
-#     return result
+    for i in range(1, num + 1):
+        result *= i
+    return result
 
 
-# result = factorial()
-# print(result)
+result = factorial()
+print(result)
 
 
 """
@@ -36,21 +36,21 @@ and returns a dictionary where keys are words and values are the counts of those
 words in the sentence."""
 
 
-# def word_count():
-#     sentence = input("Enter the sentence : ").lower().split()
-#     my_dict = {}
+def word_count():
+    sentence = input("Enter the sentence : ").lower().split()
+    my_dict = {}
 
-#     for word in sentence:
-#         if word in my_dict:
-#             my_dict[word] += 1
-#         else:
-#             my_dict[word] = 1
+    for word in sentence:
+        if word in my_dict:
+            my_dict[word] += 1
+        else:
+            my_dict[word] = 1
 
-#     return my_dict
+    return my_dict
 
 
-# r = word_count()
-# print(r)
+r = word_count()
+print(r)
 
 
 """
