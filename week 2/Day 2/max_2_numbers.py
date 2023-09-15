@@ -1,7 +1,7 @@
 """
 Ask 2 numbers from user.
 Print which is the greatest
-if-elof-else
+if-elif-else
 """
 
 n1 = 34
