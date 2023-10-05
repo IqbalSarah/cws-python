@@ -1,0 +1,29 @@
+candidates = {"Alice": 0, "Bob": 0, "Carol": 0}
+
+print("Candidates:")
+candidate_list = list(candidates.keys())
+for i in range(len(candidate_list)):
+    print(f"{i + 1}. {candidate_list[i]}")
+
+while True:
+    print(
+        "\nEnter the name of the candidate you want to vote for (or type 'end' to finish voting):"
+    )
+    user_input = input().strip()
+
+    if user_input == "end":
+        break
+    elif user_input in candidates:
+        candidates[user_input] += 1
+        print("Vote recorded!")
+    else:
+        print(
+            "Invalid candidate name. Please choose a valid candidate or type 'end' to finish voting."
+        )
+
+print("\nResults:")
+for candidate in candidates.keys():
+    print(f"{candidate}: {candidates[candidate]} votes")
+
+winner = max(candidates, key=candidates.get)
+print("\nWinner:", winner)
